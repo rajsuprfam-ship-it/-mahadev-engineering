@@ -5,10 +5,7 @@ export default function Hero() {
   return (
     <section className="mahadev-video-hero">
 
-      {/* =====================================================
-          FULL SCREEN HERO VIDEO
-      ===================================================== */}
-
+      {/* HERO VIDEO */}
       <video
         className="mahadev-hero-video"
         autoPlay
@@ -26,40 +23,27 @@ export default function Hero() {
       </video>
 
 
-      {/* =====================================================
-          VERY LIGHT OVERLAY
-          Keeps the original video visible
-      ===================================================== */}
-
+      {/* LIGHT OVERLAY */}
       <div className="mahadev-hero-overlay"></div>
 
 
-      {/* =====================================================
-          CTA BUTTONS
-          Bottom-center so they don't cover Gemini text
-      ===================================================== */}
-
+      {/* CTA BUTTONS */}
       <motion.div
         className="mahadev-hero-buttons"
-
         initial={{
           opacity: 0,
           y: 15,
         }}
-
         animate={{
           opacity: 1,
           y: 0,
         }}
-
         transition={{
           duration: 0.7,
           delay: 0.4,
           ease: [0.22, 1, 0.36, 1],
         }}
       >
-
-        {/* EXPLORE SERVICES */}
 
         <a
           href="/services"
@@ -73,8 +57,6 @@ export default function Hero() {
           />
         </a>
 
-
-        {/* START A PROJECT */}
 
         <a
           href="/contact"
