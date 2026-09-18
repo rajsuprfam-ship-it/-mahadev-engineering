@@ -11063,7 +11063,7 @@ button {
     width: calc(100% - 24px);
     max-width: 390px;
 
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
 
     display: flex;
     align-items: center;
